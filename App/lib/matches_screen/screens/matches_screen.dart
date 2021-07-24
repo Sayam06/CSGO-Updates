@@ -46,7 +46,7 @@ class _MatchesScreenState extends State<MatchesScreen> with AutomaticKeepAliveCl
       isLoading = true;
     });
 
-    String newsDataUrl = "https://calm-beyond-54614.herokuapp.com/csgo/view/match";
+    String newsDataUrl = url;
 
     http.Response response = await http.get(Uri.parse(newsDataUrl), headers: {"Accept": "application/json"});
     allMatches = json.decode(response.body);
