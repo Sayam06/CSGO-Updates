@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> with AutomaticKeepAliveClientMi
       isLoading = true;
     });
 
-    String newsDataUrl = "https://calm-beyond-54614.herokuapp.com/csgo/view/news";
+    String newsDataUrl = url;
 
     http.Response response = await http.get(Uri.parse(newsDataUrl), headers: {"Accept": "application/json"});
     allNews = json.decode(response.body);

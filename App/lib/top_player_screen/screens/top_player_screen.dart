@@ -26,7 +26,7 @@ class _TopPlayerScreenState extends State<TopPlayerScreen> with AutomaticKeepAli
       isLoading = true;
     });
 
-    String newsDataUrl = "https://calm-beyond-54614.herokuapp.com/csgo/view/playerRating";
+    String newsDataUrl = url;
 
     http.Response response = await http.get(Uri.parse(newsDataUrl), headers: {"Accept": "application/json"});
     allRatings = json.decode(response.body);
