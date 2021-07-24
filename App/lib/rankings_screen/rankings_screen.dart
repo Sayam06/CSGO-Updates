@@ -26,7 +26,7 @@ class _RankingsScreenState extends State<RankingsScreen> with AutomaticKeepAlive
       isLoading = true;
     });
 
-    String newsDataUrl = "https://calm-beyond-54614.herokuapp.com/csgo/view/rankings";
+    String newsDataUrl = url;
 
     http.Response response = await http.get(Uri.parse(newsDataUrl), headers: {"Accept": "application/json"});
     allRankings = json.decode(response.body);
