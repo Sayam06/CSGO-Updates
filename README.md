@@ -1,6 +1,13 @@
 # CSGO Updates
 
 Counter Strike news, matches, ratings and more, at your fingertips.
+<br>
+<br>
+<br>
+<p align = "center">
+  <img src = "/Logo/Logo.png" height = 200>
+  </p>
+<br>  
 
 ## Description
 
